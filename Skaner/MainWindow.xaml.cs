@@ -69,8 +69,8 @@ namespace Skaner
                 co = "protokol";
             if (oplaty_drogowe.IsChecked == true)
                 co = "oplaty";
-            if (faktura.IsChecked == true)
-                co = "rachunek";
+            if (notatki.IsChecked == true)
+                co = "notatki";
 
             numer_zlecenia.Text = numer_zlecenia.Text.Replace("\\", "_");
             numer_zlecenia.Text = numer_zlecenia.Text.Replace("/", "_");
