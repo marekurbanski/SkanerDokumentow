@@ -57,6 +57,11 @@ namespace Skaner
 
             var imageFile = (ImageFile)scannerItem.Transfer(FormatID.wiaFormatJPEG);
 
+            numer_zlecenia.Text = numer_zlecenia.Text.Replace("\\", "_");
+            numer_zlecenia.Text = numer_zlecenia.Text.Replace("/", "_");
+            //numer_zlecenia.Text = numer_zlecenia.Text.ToUpper();
+            DoEvents();
+
             if (!Directory.Exists("C:\\Users\\USER\\Dysk Google\\Dokumenty\\" + numer_zlecenia.Text))
             {
                 Directory.CreateDirectory("C:\\Users\\USER\\Dysk Google\\Dokumenty\\" + numer_zlecenia.Text);
@@ -71,10 +76,6 @@ namespace Skaner
                 co = "oplaty";
             if (notatki.IsChecked == true)
                 co = "notatki";
-
-            numer_zlecenia.Text = numer_zlecenia.Text.Replace("\\", "_");
-            numer_zlecenia.Text = numer_zlecenia.Text.Replace("/", "_");
-            numer_zlecenia.Text = numer_zlecenia.Text.ToUpper();
 
         Sprawdzanie:
 
