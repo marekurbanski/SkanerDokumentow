@@ -72,7 +72,11 @@ namespace Skaner
             if (faktura.IsChecked == true)
                 co = "rachunek";
 
-            Sprawdzanie:
+            numer_zlecenia.Text = numer_zlecenia.Text.Replace("\\", "_");
+            numer_zlecenia.Text = numer_zlecenia.Text.Replace("/", "_");
+            //numer_zlecenia.Text = numer_zlecenia.Text.Replace(" ", " ");
+
+        Sprawdzanie:
 
             var path = @"C:\\Holowanie\\" + numer_zlecenia.Text + "\\" + co.ToString() +"_"+numer.ToString() + ".jpeg";
 
@@ -84,7 +88,7 @@ namespace Skaner
             }
 
             imageFile.SaveFile(path);
-            MessageBox.Show("Zrobione");
+            MessageBox.Show("Zrobione","Info");
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)

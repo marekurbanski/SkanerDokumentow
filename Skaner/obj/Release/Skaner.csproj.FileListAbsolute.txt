@@ -1,0 +1,17 @@
+C:\VisualStudio\Skaner\Skaner\bin\Release\Skaner.exe.config
+C:\VisualStudio\Skaner\Skaner\bin\Release\Skaner.exe
+C:\VisualStudio\Skaner\Skaner\bin\Release\Skaner.pdb
+C:\VisualStudio\Skaner\Skaner\bin\Release\Interop.WIA.dll
+C:\VisualStudio\Skaner\Skaner\obj\Release\Interop.WIA.dll
+C:\VisualStudio\Skaner\Skaner\obj\Release\Skaner.csproj.ResolveComReference.cache
+C:\VisualStudio\Skaner\Skaner\obj\Release\MainWindow.g.cs
+C:\VisualStudio\Skaner\Skaner\obj\Release\App.g.cs
+C:\VisualStudio\Skaner\Skaner\obj\Release\Skaner_MarkupCompile.cache
+C:\VisualStudio\Skaner\Skaner\obj\Release\Skaner_MarkupCompile.lref
+C:\VisualStudio\Skaner\Skaner\obj\Release\MainWindow.baml
+C:\VisualStudio\Skaner\Skaner\obj\Release\Skaner.g.resources
+C:\VisualStudio\Skaner\Skaner\obj\Release\Skaner.Properties.Resources.resources
+C:\VisualStudio\Skaner\Skaner\obj\Release\Skaner.csproj.GenerateResource.cache
+C:\VisualStudio\Skaner\Skaner\obj\Release\Skaner.csproj.CoreCompileInputs.cache
+C:\VisualStudio\Skaner\Skaner\obj\Release\Skaner.exe
+C:\VisualStudio\Skaner\Skaner\obj\Release\Skaner.pdb
