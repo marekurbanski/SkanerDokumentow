@@ -1,0 +1,17 @@
+﻿<Window x:Class="Skaner.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Skaner"
+        mc:Ignorable="d"
+        Title="Skaner Dokumentów" Height="244" Width="384">
+    <Grid>
+        <RadioButton x:Name="protokol" Content="Protokol" HorizontalAlignment="Left" Margin="32,91,0,0" VerticalAlignment="Top" Width="210" IsChecked="True"/>
+        <RadioButton x:Name="oplaty_drogowe" Content="Opłaty drogowe" HorizontalAlignment="Left" Margin="32,111,0,0" VerticalAlignment="Top" Width="190"/>
+        <RadioButton x:Name="faktura" Content="Faktura/Paragon" HorizontalAlignment="Left" Margin="32,131,0,0" VerticalAlignment="Top" Width="190"/>
+        <Button x:Name="skanuj" Content="Skanuj" HorizontalAlignment="Left" Margin="222,91,0,0" VerticalAlignment="Top" Width="123" Click="Button_Click" Height="55"/>
+        <TextBox x:Name="numer_zlecenia" HorizontalAlignment="Left" Height="23" Margin="32,47,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="313"/>
+        <Label Content="Numer zlecenia" HorizontalAlignment="Left" Margin="32,21,0,0" VerticalAlignment="Top"/>
+    </Grid>
+</Window>
