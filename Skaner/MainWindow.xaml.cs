@@ -57,9 +57,9 @@ namespace Skaner
 
             var imageFile = (ImageFile)scannerItem.Transfer(FormatID.wiaFormatJPEG);
 
-            if (!Directory.Exists("C:\\Holowanie\\" + numer_zlecenia.Text))
+            if (!Directory.Exists("C:\\Users\\USER\\Dysk Google\\Dokumenty\\" + numer_zlecenia.Text))
             {
-                Directory.CreateDirectory("C:\\Holowanie\\" + numer_zlecenia.Text);
+                Directory.CreateDirectory("C:\\Users\\USER\\Dysk Google\\Dokumenty\\" + numer_zlecenia.Text);
             }
 
             int numer = 1;
@@ -74,11 +74,11 @@ namespace Skaner
 
             numer_zlecenia.Text = numer_zlecenia.Text.Replace("\\", "_");
             numer_zlecenia.Text = numer_zlecenia.Text.Replace("/", "_");
-            //numer_zlecenia.Text = numer_zlecenia.Text.Replace(" ", " ");
+            numer_zlecenia.Text = numer_zlecenia.Text.ToUpper();
 
         Sprawdzanie:
 
-            var path = @"C:\\Holowanie\\" + numer_zlecenia.Text + "\\" + co.ToString() +"_"+numer.ToString() + ".jpeg";
+            var path = @"C:\\Users\\USER\\Dysk Google\\Dokumenty\\" + numer_zlecenia.Text + "\\" + co.ToString() +"_"+numer.ToString() + ".jpeg";
 
 
             if (File.Exists(path))
