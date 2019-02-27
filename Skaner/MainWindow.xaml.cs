@@ -77,12 +77,20 @@ namespace Skaner
             if (notatki.IsChecked == true)
                 co = "notatki";
 
-        Sprawdzanie:
+            String sciezka = "Dokumenty";
+            if (wyjasnienie.IsChecked == true)
+            {
+                sciezka = "Wyjasnienia";
+                co = "dokument";
+            }
 
-            var path = @"C:\\Users\\USER\\Dysk Google\\Dokumenty\\" + numer_zlecenia.Text + "\\" + co.ToString() +"_"+numer.ToString() + ".jpeg";
+            Sprawdzanie:
+
+            var path = @"C:\\Users\\USER\\Dysk Google\\"+ sciezka + "\\" + numer_zlecenia.Text + "\\" + co.ToString() +"_"+numer.ToString() + ".jpeg";
 
 
-            if (File.Exists(path))
+
+                if (File.Exists(path))
             {
                 numer++;
                 goto Sprawdzanie;
